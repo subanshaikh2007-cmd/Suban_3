@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+body{
+    font-family:Arial;
+    background-image:url('Laptop.jpeg');
+	background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 100px;
+}
+.box{
+    width: 350px;
+            margin: auto;
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            border-radius: 15px;
+
+}
+input{
+    width:95%;
+    padding:10px;
+    margin:10px 0;
+}
+button{
+    width:100%;
+    padding:10px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+button:hover{
+    background:#0056b3;
+}
+.error{
+    color:red;
+    display:none;
+}
+h2{
+	color:white;
+}
+</style>
+
+<script>
+function login(){
+
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+
+    if(username=="admin" && password=="12345"){
+        window.location="home.html";
+    }
+    else{
+        document.getElementById("msg").style.display="block";
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2 align="center">Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<p class="error" id="msg">
+Wrong Username or Password!
+</p>
+
+<button onclick="login()">Login</button>
+
+<br><br>
+
+<center><a href="register.html">Create New User</a></center>
+
+</div>
+
+</body>
+</html>
