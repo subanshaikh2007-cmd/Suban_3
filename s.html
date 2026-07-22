@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Wishes</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            background-image: url('Sunset.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h2{
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"]{
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"]{
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ff4d4d;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover{
+            background: #e60000;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Enter Your Name</h2>
+
+    <form action="card.html">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
